@@ -14,3 +14,44 @@ The **Pull requests** tab contains proposals to make some changes in the files l
 You can create an *Issue* or make a *Pull request (PR)* to contribute to the project.
 
 If you want to propose some changes to this repo, you may *fork* it, modify the content, and create *PR*. A *fork* is just a copy that allows you to change the content without affection the original project.
+
+
+## Editing this file (myself)
+I add the code below to show how git and gitub works to gather
+
+$ git clone https://github.com/hyperskill/intro-to-github.git
+
+$ git status
+
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+$ git branch edit-readme
+
+$ git checkout edit-readme
+
+$ git status
+
+On branch edit-readme
+nothing to commit, working tree clean
+
+$ git add README.md
+
+
+$ git commit -m "Add information about local repository in readme file"
+
+
+$ git push --set-upstream origin edit-readme
+there is no branch with name edit-readme in origin(remote server) therefore
+we should write push command this way
+
+$ git push
+for changes after the first one we can simply use push 
+
+$ git pull
+if someone else is working on the same brach we should first pull the 
+repo and then push our changes to avoid coflict in our codebase
+
+
+
+
