@@ -1,0 +1,97 @@
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git
+$ git clone https://github.com/aliNil/intro-to-github.git
+Cloning into 'intro-to-github'...
+remote: Enumerating objects: 24, done.
+remote: Total 24 (delta 0), reused 0 (delta 0), pack-reused 24 (from 1)
+Receiving objects: 100% (24/24), 6.05 KiB | 2.02 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git
+$ cd intro-to-github/
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (master)
+$ git branch edit-readme
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (master)
+$ git checkout edit-readme
+Switched to branch 'edit-readme'
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git status
+On branch edit-readme
+nothing to commit, working tree clean
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git status
+On branch edit-readme
+nothing to commit, working tree clean
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git status
+On branch edit-readme
+nothing to commit, working tree clean
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git status
+On branch edit-readme
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ got add README.md
+bash: got: command not found
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git add README.md
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git commit -m "Write some helpful git commands to work with a remote repo."
+[edit-readme 867a3bb] Write some helpful git commands to work with a remote repo.
+ 1 file changed, 41 insertions(+)
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git push --set-upstream origin edit-readme
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 792 bytes | 792.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'edit-readme' on GitHub by visiting:
+remote:      https://github.com/aliNil/intro-to-github/pull/new/edit-readme
+remote:
+To https://github.com/aliNil/intro-to-github.git
+ * [new branch]      edit-readme -> edit-readme
+branch 'edit-readme' set up to track 'origin/edit-readme'.
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git push 
+Everything up-to-date
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$ git pull
+Already up to date.
+
+Lenovo@alilen MINGW64 /d/programing_tutorial/hyperskill_training/git/intro-to-github (edit-readme)
+$
